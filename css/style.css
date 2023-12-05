@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap');
+
+/* font-family: 'Libre Franklin', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.brand h1{
+    font-family: 'Libre Franklin', sans-serif;
+}
+span{
+    color:hsl(223, 87%, 63%);
+}
+#hero-span{
+    color:hsl(0, 0%, 59%);
+    font-weight: 300;
+}
+.hero-section h1{
+    font-size: 2.5rem;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+/* section */
+section, footer{
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.email input{
+    width: 350px;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 50px;
+    border: 1px solid hsl(223, 87%, 63%);
+    font-family: 'Libre Franklin', sans-serif;
+}
+input:focus{
+    outline: none;
+}
+::placeholder{
+    color:hsl(223, 87%, 63%);
+    opacity: .5;
+}
+section img{
+    width: 35%;
+}
+.email button{
+    padding: 12px 50px;
+    background: hsl(223, 87%, 63%);
+    color:white;
+    border-radius: 30px;
+    border: none;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 700;
+    margin-left: 10px;
+    transition: box-shadow .2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+button:hover{
+    cursor: pointer;
+    box-shadow: .2rem .2rem 1rem hsl(223, 100%, 88%);
+}
+.social{
+    display: inherit;
+    gap: 40px;
+    align-items: center;
+}
+.social a{
+    font-size: 1.5rem;
+}
+.social a:hover{
+    color:hsl(223, 87%, 63%);
+}
+.copyright p{
+    font-size: .8rem;
+    color:hsl(0, 0%, 59%);
+}
+#error{
+    font-size: .7rem;
+    color:hsl(354, 100%, 66%);
+    text-align: start;
+    position: relative;
+    left: 10px;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 578px) {
+    .brand h1{
+        font-size: 1.5rem;
+    }
+    header{
+        margin-top: 20px;
+    }
+    .hero-section h1{
+        font-size: 1.5rem;
+    }
+    .email {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .email input{
+        width: 250px;
+        font-size: 1rem;
+        padding: 12px;
+    }
+    .email button{
+        width: 250px;
+        margin-top: 27px;
+    }
+    #error{
+        position: absolute;
+        top: 265px;
+        left: 90px; 
+    }
+    section{
+        gap: 40px;
+        padding: 20px;
+    }
+    section img{
+        width: 90%;
+        height: auto;
+    };
+    
+}
